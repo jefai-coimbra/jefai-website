@@ -1,0 +1,29 @@
+name: Bug
+description: Algo não funciona ou não está como no mockup
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: oque
+    attributes:
+      label: O que acontece
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: O que devia acontecer
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Como reproduzir
+      placeholder: |
+        1. Abrir o site em ...
+        2. Clicar em ...
+  - type: input
+    id: ambiente
+    attributes:
+      label: Browser e dispositivo
+      placeholder: "Ex.: Chrome 130, iPhone 13"

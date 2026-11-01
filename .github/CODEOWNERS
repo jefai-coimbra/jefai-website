@@ -1,0 +1,13 @@
+# Quem é automaticamente chamado a rever cada PR.
+# Substituir pelos utilizadores/equipa reais da organização (ver docs/SETUP-GITHUB.md, passo 4).
+# Formato: <padrão>  <@utilizador ou @organizacao/equipa>
+
+# Tudo o resto: tech leads
+*                       @ORGANIZACAO/tech-leads
+
+# Configuração e infraestrutura: só o coordenador técnico
+/.github/               @COORDENADOR
+/next.config.ts         @COORDENADOR
+/package.json           @COORDENADOR
+/src/app/globals.css    @COORDENADOR
+/src/components/ui/     @ORGANIZACAO/tech-leads

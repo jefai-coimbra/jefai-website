@@ -1,0 +1,35 @@
+name: Tarefa
+description: Nova secção, componente ou melhoria
+title: "[WEB-XX] "
+body:
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto
+      description: Porque é que isto é preciso? Onde aparece no site?
+    validations:
+      required: true
+  - type: textarea
+    id: ficheiros
+    attributes:
+      label: Ficheiros
+      description: Onde se mexe e qual o ficheiro de referência a seguir.
+      placeholder: |
+        - Editar: src/components/sections/....tsx
+        - Conteúdo: src/content/home.ts → `...`
+        - Referência: src/components/sections/HowWeWork.tsx
+  - type: textarea
+    id: criterios
+    attributes:
+      label: Critérios de aceitação
+      description: Lista verificável. Se não dá para verificar, não é critério.
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: fora
+    attributes:
+      label: Fora de âmbito
+      description: O que NÃO faz parte desta issue.

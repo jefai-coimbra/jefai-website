@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/*
+ * DESIGN TOKENS JEFAI — fonte única de verdade para cores e tipografia.
+ * Extraídos do mockup (opção 2). Não usar cores hex soltas nos componentes:
+ * usar sempre as classes geradas (ex.: bg-jefai, text-jefai-light, border-jefai-ice-border).
+ */
+@theme {
+  --color-jefai: #05324b; /* azul-petróleo oficial do logo */
+  --color-jefai-dark: #032235;
+  --color-jefai-light: #0b557d;
+  --color-jefai-accent: #0284c7;
+  --color-jefai-ice: #f4f8fb;
+  --color-jefai-ice-border: #dce8f2;
+
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* compensa a navbar sticky (h-20) ao navegar por âncoras */
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-white font-sans text-slate-900 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+  }
+
+  ::selection {
+    @apply bg-jefai text-white;
+  }
+}
+
+/* Padrão de grelha subtil usado no Hero (opção 2) */
+@utility bg-subtle-grid {
+  background-size: 32px 32px;
+  background-image:
+    linear-gradient(to right, rgb(5 50 75 / 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(5 50 75 / 0.04) 1px, transparent 1px);
+}
