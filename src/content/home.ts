@@ -39,7 +39,7 @@ export const howWeWork = {
   eyebrow: "Manual de Supervisão de Projetos",
   title: "Como Trabalhamos",
   description:
-    "Cada projeto na JEFAI segue 4 pilares de supervisão para reduzir riscos e garantir transparência total com o cliente.",
+    "Cada projeto na JEFAI segue 4 pilares de supervisão, para reduzir riscos e garantir transparência total com o cliente.",
   steps: [
     {
       title: "Objetivos Claros",
