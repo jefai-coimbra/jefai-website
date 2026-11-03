@@ -1,13 +1,20 @@
 # Quem é automaticamente chamado a rever cada PR.
-# Substituir pelos utilizadores/equipa reais da organização (ver docs/SETUP-GITHUB.md, passo 4).
-# Formato: <padrão>  <@utilizador ou @organizacao/equipa>
+# Regra do GitHub: vale a ÚLTIMA linha que corresponde ao ficheiro.
+# Uma aprovação de qualquer membro da equipa indicada satisfaz a revisão de Code Owner.
+# Equipas usadas aqui têm de ser visíveis e ter pelo menos permissão Write.
+# Ver docs/SETUP-GITHUB.md, passo 4.
 
-# Tudo o resto: tech leads
-*                       @ORGANIZACAO/tech-leads
+# Tudo: tech leads
+*                       @jefai-coimbra/tech-leads
 
-# Configuração e infraestrutura: só o coordenador técnico
-/.github/               @COORDENADOR
-/next.config.ts         @COORDENADOR
-/package.json           @COORDENADOR
-/src/app/globals.css    @COORDENADOR
-/src/components/ui/     @ORGANIZACAO/tech-leads
+# Áreas sensíveis (explícitas para continuarem protegidas se a regra "*" mudar)
+/.github/               @jefai-coimbra/tech-leads
+/docs/adr/              @jefai-coimbra/tech-leads
+/next.config.ts         @jefai-coimbra/tech-leads
+/package.json           @jefai-coimbra/tech-leads
+/package-lock.json      @jefai-coimbra/tech-leads
+/.nvmrc                 @jefai-coimbra/tech-leads
+/tsconfig.json          @jefai-coimbra/tech-leads
+/eslint.config.mjs      @jefai-coimbra/tech-leads
+/src/app/globals.css    @jefai-coimbra/tech-leads
+/src/components/ui/     @jefai-coimbra/tech-leads
