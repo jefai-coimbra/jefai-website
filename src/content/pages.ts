@@ -5,7 +5,6 @@
 
 // ─── 404 ─────────────────────────────────────────────────────────────────────
 export const notFound = {
-  eyebrow: "Erro 404",
   title: "Página não encontrada",
   description:
     "O link que seguiste não existe ou foi movido. Volta à página inicial para continuar.",
