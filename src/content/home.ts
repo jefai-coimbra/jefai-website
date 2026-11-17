@@ -233,6 +233,16 @@ export const contact = {
   title: "Vamos conversar sobre o seu próximo projeto?",
   description:
     "Quer procure implementar Inteligência Artificial na sua empresa, estabelecer uma parceria institucional ou juntar-se à equipa, estamos disponíveis.",
+  /** Rótulos do painel institucional (WEB-05). */
+  labels: {
+    address: "Morada",
+    email: "Email",
+    legal: "Entidade",
+    nipc: "NIPC",
+    social: "Redes Sociais",
+    /** Texto só para leitores de ecrã nos links que abrem noutro separador. */
+    newTab: "(abre num novo separador)",
+  },
   subjects: [
     "Pedido de Proposta — Soluções de IA / Machine Learning",
     "Pedido de Proposta — Análise de Dados & Automação",
