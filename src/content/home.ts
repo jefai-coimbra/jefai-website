@@ -204,6 +204,7 @@ export const recruitment = {
     cta: "Fala connosco",
     href: "#contacto",
   },
+  stepLabel: "Etapa",
   title: "Queres desenvolver competências em IA através de projetos reais?",
   description:
     "A JEFAI recruta estudantes do 1.º ano de Licenciatura ao 2.º ano de Mestrado da Universidade de Coimbra que queiram crescer em ambiente empresarial.",
