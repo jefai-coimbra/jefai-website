@@ -123,6 +123,9 @@ export const departments = {
   id: "departamentos",
   eyebrow: "Estrutura Interna",
   title: "Os 4 Departamentos da JEFAI",
+  /** Nome acessível da lista de tabs (lido pelos leitores de ecrã). */
+  tablistLabel: "Departamentos da JEFAI",
+  responsibilitiesTitle: "Principais Responsabilidades",
   items: [
     {
       key: "projetos",
