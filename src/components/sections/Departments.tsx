@@ -4,7 +4,7 @@ import { departments } from "@/content/home";
 import { DepartmentTabs } from "./DepartmentTabs";
 
 /**
- * Os 4 Departamentos (tabs interativas) — WEB-06.
+ * Os Departamentos da JEFAI (tabs interativas) — WEB-06.
  * Conteúdo: `departments` em src/content/home.ts.
  * Este ficheiro continua a ser um Server Component: só o <DepartmentTabs /> tem estado ("use client").
  * O cabeçalho é passado como `heading` para ficar à esquerda das tabs no desktop.
