@@ -122,7 +122,11 @@ export type Department = {
 export const departments = {
   id: "departamentos",
   eyebrow: "Estrutura Interna",
-  title: "Os 4 Departamentos da JEFAI",
+  // Sem número no título, para não ser preciso mudá-lo se a estrutura mudar.
+  title: "Os Departamentos da JEFAI",
+  /** Nome acessível da lista de tabs (lido pelos leitores de ecrã). */
+  tablistLabel: "Departamentos da JEFAI",
+  responsibilitiesTitle: "Principais Responsabilidades",
   items: [
     {
       key: "projetos",
@@ -174,6 +178,21 @@ export const departments = {
         "Elaboração de orçamentos e controlo financeiro dos projetos",
         "Gestão administrativa, fiscal e cumprimento de protocolos (FCTUC)",
         "Análise de viabilidade e sustentabilidade da Júnior Iniciativa",
+      ],
+    },
+    {
+      // Descrição e responsabilidades enviadas pelo coordenador do Departamento Comercial.
+      // A etiqueta (`tag`) foi tirada da descrição dele: confirmar com ele.
+      key: "comercial",
+      name: "Comercial",
+      tag: "Crescimento & Relacionamento Externo",
+      title: "Departamento Comercial",
+      description:
+        "O Departamento Comercial da JEFAI é o motor de crescimento e relacionamento externo da empresa, responsável por conectar as soluções e produtos da marca às necessidades do mercado, garantindo a geração sustentável de receita e a expansão da carteira de clientes.",
+      responsibilities: [
+        "Prospeção e angariação de novos clientes",
+        "Gestão e fidelização da carteira de clientes",
+        "Análise de mercado e planeamento de vendas",
       ],
     },
   ] satisfies Department[],

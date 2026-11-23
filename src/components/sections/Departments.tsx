@@ -1,16 +1,25 @@
 import { Section } from "@/components/ui/Section";
-import { SectionPlaceholder } from "@/components/ui/SectionPlaceholder";
+import { SectionHeader } from "@/components/ui/SectionHeader";
 import { departments } from "@/content/home";
+import { DepartmentTabs } from "./DepartmentTabs";
 
 /**
- * Os 4 Departamentos (tabs interativas) — WEB-06.
+ * Os Departamentos da JEFAI (tabs interativas) — WEB-06.
  * Conteúdo: `departments` em src/content/home.ts.
- * Nota: as tabs precisam de estado → criar um Client Component ("use client") só para essa parte.
+ * Este ficheiro continua a ser um Server Component: só o <DepartmentTabs /> tem estado ("use client").
+ * O cabeçalho é passado como `heading` para ficar à esquerda das tabs no desktop.
  */
 export function Departments() {
+  const { id, eyebrow, title, tablistLabel, responsibilitiesTitle, items } = departments;
+
   return (
-    <Section id={departments.id} tone="ice" border="top">
-      <SectionPlaceholder issue="WEB-06" title="Departamentos (tabs)" />
+    <Section id={id} tone="ice" border="top">
+      <DepartmentTabs
+        heading={<SectionHeader eyebrow={eyebrow} title={title} className="mb-0" />}
+        tablistLabel={tablistLabel}
+        responsibilitiesTitle={responsibilitiesTitle}
+        items={items}
+      />
     </Section>
   );
 }
