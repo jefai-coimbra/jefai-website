@@ -7,13 +7,13 @@
 export const hero = {
   // O mockup tinha "JUNITEC / JEP Inspired" — removido, não podemos referir outras JE.
   badge: "Júnior Iniciativa · Universidade de Coimbra",
-  titleStart: "Soluções de Inteligência Artificial com",
-  titleHighlight: "Impacto Real.",
+  titleStart: "Soluções de inteligência artificial para",
+  titleHighlight: "desafios reais.",
   // TODO(conteúdo): confirmar se o "Manual de Supervisão de Projetos" existe e pode ser citado
   description:
-    "Desenvolvemos software inteligente, modelos de Machine Learning e automação de processos seguindo o nosso Manual de Supervisão de Projetos — garantindo cumprimento rigoroso de escopo, prazo e orçamento.",
-  primaryCta: { label: "Iniciar um Projeto com a JEFAI", href: "#contacto" },
-  secondaryCta: { label: "Ver Metodologia de Trabalho", href: "#como-trabalhamos" },
+    "Desenvolvemos soluções de software inteligente, aprendizagem automática e automação de processos, orientadas para as necessidades de cada organização, com foco na qualidade, no rigor técnico e na colaboração.",
+  primaryCta: { label: "Iniciar um projeto com a JEFAI", href: "#contacto" },
+  secondaryCta: { label: "Conhecer a nossa metodologia", href: "#como-trabalhamos" },
 } as const;
 
 export type Highlight = { label: string; href: string };
@@ -23,7 +23,7 @@ export type Highlight = { label: string; href: string };
  * TODO(conteúdo): só publicar itens com link real e verificável (WEB-16). Lista vazia = barra escondida.
  */
 export const highlights: { title: string; items: Highlight[] } = {
-  title: "Em Destaque & Cooperação Institucional",
+  title: "Destaques e cooperação institucional",
   items: [
     { label: "FCTUC · Universidade de Coimbra", href: "" },
     { label: 'Notícias UC ("Porque os chatbots vieram para ficar")', href: "" },
@@ -36,30 +36,30 @@ export type ProcessStep = { title: string; description: string };
 
 export const howWeWork = {
   id: "como-trabalhamos",
-  eyebrow: "Manual de Supervisão de Projetos",
-  title: "Como Trabalhamos",
+  eyebrow: "Metodologia de trabalho",
+  title: "Como trabalhamos",
   description:
-    "Cada projeto na JEFAI segue 4 pilares de supervisão, para reduzir riscos e garantir transparência total com o cliente.",
+    "A nossa metodologia assenta em quatro pilares que procuram reduzir riscos, promover a transparência e facilitar a colaboração com o cliente.",
   steps: [
     {
-      title: "Objetivos Claros",
+      title: "Objetivos claros",
       description:
-        "Reunião de diagnóstico com o cliente para identificar o problema de negócio e definir métricas concretas de sucesso.",
+        "Identificação das necessidades do cliente, compreensão do problema e definição dos objetivos e critérios de sucesso do projeto.",
     },
     {
-      title: "Estrutura Bem-Definida",
+      title: "Estrutura bem definida",
       description:
-        "Delimitação rigorosa das atividades, arquitetura técnica, entregáveis e alocação da equipa e ferramentas adequadas.",
+        "Definição do âmbito do projeto, da arquitetura técnica, dos resultados esperados e dos recursos necessários.",
     },
     {
-      title: "Cronograma & Execução",
+      title: "Planeamento e execução",
       description:
-        "Desenvolvimento iterativo com prazos viáveis para cada fase, desde a conceção e treino de modelos até à integração.",
+        "Desenvolvimento iterativo, com planeamento das diferentes fases do projeto, desde a conceção até à integração da solução.",
     },
     {
-      title: "Supervisão & Entrega",
+      title: "Supervisão e entrega",
       description:
-        "Validação de qualidade, testes finais, documentação técnica e acompanhamento pós-entrega para garantir retorno real.",
+        "Realização de testes, validação da qualidade, preparação da documentação técnica e avaliação dos resultados do projeto.",
     },
   ] satisfies ProcessStep[],
 };
@@ -69,42 +69,44 @@ export type ServiceArea = { tag: string; title: string; description: string };
 
 export const serviceAreas = {
   id: "servicos",
-  eyebrow: "Áreas de Atuação",
-  title: "Competências Técnicas ao Serviço das Empresas",
+  eyebrow: "Áreas de intervenção",
+  title: "Competências técnicas ao serviço das empresas",
   areas: [
     {
-      tag: "Core IA",
-      title: "Algoritmos & Machine Learning",
-      description: "Modelos preditivos, classificação e sistemas de recomendação personalizados.",
+      tag: "Inteligência artificial",
+      title: "Algoritmos e aprendizagem automática",
+      description:
+        "Desenvolvimento de modelos preditivos, algoritmos de classificação e sistemas de recomendação adaptados às necessidades de cada organização.",
     },
     {
-      tag: "Linguagem Natural",
-      title: "Chatbots & Soluções NLP",
+      tag: "Linguagem natural",
+      title: "Chatbots e processamento de linguagem natural",
       description:
-        "Assistentes virtuais inteligentes para apoio ao cliente e consulta de documentação interna.",
+        "Desenvolvimento de assistentes virtuais para apoio ao cliente e consulta de documentação interna.",
     },
     {
       tag: "Eficiência",
-      title: "Automação de Processos",
+      title: "Automação de processos",
       description:
-        "Redução de tarefas manuais e integração inteligente entre plataformas empresariais.",
+        "Automatização de tarefas repetitivas e integração de sistemas, com o objetivo de melhorar a eficiência operacional.",
     },
     {
-      tag: "Data Science",
-      title: "Análise de Dados",
+      tag: "Ciência de dados",
+      title: "Análise de dados",
       description:
-        "Tratamento estatístico, visualização de dados e apoio quantitativo à tomada de decisão.",
+        "Tratamento estatístico, visualização e interpretação de dados para apoiar a tomada de decisão.",
     },
     {
-      tag: "Estratégia & I&D",
-      title: "Consultoria em IA & Investigação",
+      tag: "Estratégia e I&D",
+      title: "Consultoria em IA e investigação",
       description:
-        "Avaliação de oportunidades de IA nas empresas e projetos internos de Investigação e Desenvolvimento.",
+        "Identificação de oportunidades de aplicação da IA nas empresas e desenvolvimento de projetos de investigação e desenvolvimento.",
     },
     {
-      tag: "Formação & Comunicação",
-      title: "Workshops & Redes Sociais",
-      description: "Formações práticas de literacia em IA e gestão profissional de redes sociais.",
+      tag: "Formação e comunicação",
+      title: "Formação e redes sociais",
+      description:
+        "Dinamização de workshops sobre inteligência artificial e apoio à gestão de redes sociais.",
     },
   ] satisfies ServiceArea[],
 };
@@ -121,59 +123,59 @@ export type Department = {
 
 export const departments = {
   id: "departamentos",
-  eyebrow: "Estrutura Interna",
-  title: "Os 4 Departamentos da JEFAI",
+  eyebrow: "Estrutura interna",
+  title: "Os quatro departamentos da JEFAI",
   items: [
     {
       key: "projetos",
       name: "Projetos",
-      tag: "Departamento Técnico & Operacional",
+      tag: "Desenvolvimento técnico e operacional",
       title: "Departamento de Projetos",
       description:
-        "O núcleo técnico da JEFAI. Responsável pelo desenvolvimento de algoritmos de Inteligência Artificial, modelos preditivos, sistemas de recomendação, NLP e análise de dados, aplicando o Manual de Supervisão de Projetos e dinamizando workshops técnicos internos e externos.",
+        "O núcleo técnico da JEFAI, responsável pelo desenvolvimento de soluções de inteligência artificial, aprendizagem automática, processamento de linguagem natural e análise de dados. Promove também a formação técnica dos membros e a aplicação prática dos seus conhecimentos.",
       responsibilities: [
-        "Arquitetura e desenvolvimento de soluções de IA e Machine Learning",
-        "Gestão e supervisão técnica de projetos para clientes e I&D interno",
-        "Organização de workshops técnicos (Git, Python, IA) e mini-projetos",
+        "Conceção e desenvolvimento de soluções de inteligência artificial e aprendizagem automática",
+        "Gestão e supervisão técnica de projetos para clientes e de iniciativas internas de I&D",
+        "Organização de workshops técnicos sobre Git, Python e IA, bem como de miniprojetos",
       ],
     },
     {
       key: "marketing",
       name: "Marketing",
-      tag: "Comunicação, Imagem & Redes Sociais",
+      tag: "Comunicação, imagem e redes sociais",
       title: "Departamento de Marketing",
       description:
-        "Gere a identidade visual e a presença digital da JEFAI no LinkedIn, Instagram e TikTok, além de colaborar na prestação de serviços de gestão de redes sociais e divulgação de eventos e recrutamentos na Universidade de Coimbra.",
+        "Responsável pela identidade visual, comunicação institucional e presença digital da JEFAI. Colabora na divulgação de eventos, iniciativas e processos de recrutamento, bem como na prestação de serviços de gestão de redes sociais.",
       responsibilities: [
-        "Gestão estratégica das redes sociais e comunicação institucional",
-        "Design gráfico, criação de conteúdos e cobertura de eventos/workshops",
-        "Apoio comercial na prestação de serviços de gestão de redes sociais",
+        "Gestão estratégica das redes sociais e da comunicação institucional",
+        "Design gráfico, criação de conteúdos e cobertura de eventos e workshops",
+        "Apoio à prestação de serviços de gestão de redes sociais",
       ],
     },
     {
       key: "rh",
       name: "Recursos Humanos",
-      tag: "Talento, Cultura & Formação Interna",
+      tag: "Talento, cultura e formação interna",
       title: "Departamento de Recursos Humanos",
       description:
-        "Coordena todo o ciclo de vida dos membros da JEFAI: desde o planeamento das fases de recrutamento (Formulário, Entrevistas Individuais e Dinâmica de Grupo) até ao acompanhamento da motivação, coesão multidisciplinar e formação.",
+        "Acompanha o percurso dos membros da JEFAI, desde o recrutamento e a integração até ao seu desenvolvimento pessoal e profissional. Promove a colaboração entre departamentos, a motivação e a formação contínua.",
       responsibilities: [
-        "Condução dos processos anuais de recrutamento e seleção na UC",
-        "Acompanhamento de equipas e integração de novos membros",
-        "Promoção da cultura interna e eventos de team building",
+        "Planeamento e realização dos processos de recrutamento e seleção",
+        "Acompanhamento das equipas e integração de novos membros",
+        "Promoção da cultura interna e organização de atividades de team building",
       ],
     },
     {
       key: "financeiro",
       name: "Financeiro",
-      tag: "Sustentabilidade, Legal & Orçamentação",
+      tag: "Sustentabilidade e gestão jurídica e orçamental",
       title: "Departamento Financeiro",
       description:
-        "Assegura o rigor orçamental, fiscal e legal da Associação Juvenil JEFAI (NIPC 517706040), estruturando propostas financeiras competitivas para clientes e gerindo parcerias e protocolos institucionais.",
+        "Responsável pela gestão financeira, administrativa e fiscal da Associação Juvenil JEFAI. Contribui para a sustentabilidade da organização, a elaboração de propostas financeiras e a gestão de parcerias institucionais.",
       responsibilities: [
         "Elaboração de orçamentos e controlo financeiro dos projetos",
-        "Gestão administrativa, fiscal e cumprimento de protocolos (FCTUC)",
-        "Análise de viabilidade e sustentabilidade da Júnior Iniciativa",
+        "Gestão administrativa e fiscal e acompanhamento de protocolos institucionais",
+        "Análise da viabilidade financeira e da sustentabilidade da Júnior Iniciativa",
       ],
     },
   ] satisfies Department[],
@@ -194,34 +196,34 @@ export const recruitment = {
   /** Identifica a edição nas candidaturas guardadas, ex.: "2026-27-1" (ano letivo + n.º da fase). */
   edition: "2026-27-1",
   open: {
-    badge: "Candidaturas Abertas para Estudantes da UC",
-    cta: "Submeter Candidatura",
+    badge: "Candidaturas abertas para estudantes da UC",
+    cta: "Submete a tua candidatura",
     href: "/candidatura",
   },
   closed: {
-    badge: "Candidaturas Encerradas · Próxima edição em breve",
+    badge: "Candidaturas encerradas",
     // v1.1 (WEB-30): substituir por "Receber alerta do próximo recrutamento"
     cta: "Fala connosco",
     href: "#contacto",
   },
   title: "Queres desenvolver competências em IA através de projetos reais?",
   description:
-    "A JEFAI recruta estudantes do 1.º ano de Licenciatura ao 2.º ano de Mestrado da Universidade de Coimbra que queiram crescer em ambiente empresarial.",
+    "Na JEFAI, podes aplicar os teus conhecimentos, desenvolver novas competências e crescer num ambiente empresarial. Recrutamos estudantes da Universidade de Coimbra, desde o 1.º ano de licenciatura até ao 2.º ano de mestrado.",
   steps: [
     {
-      title: "Formulário Online",
+      title: "Formulário online",
       description:
-        "Preenchimento dos teus dados académicos, seleção dos departamentos por ordem de preferência (1.ª a 4.ª opção), CV e Carta de Motivação.",
+        "Preenche os teus dados académicos, indica os departamentos por ordem de preferência e envia o teu currículo e a tua carta de motivação.",
     },
     {
-      title: "Entrevista Individual",
+      title: "Entrevista individual",
       description:
-        "Conversa simples para conhecer o teu percurso académico, interesses em IA e explicar como funciona o departamento a que te candidatas.",
+        "Uma oportunidade para conhecermos o teu percurso académico, os teus interesses e a tua motivação, e para te apresentarmos o funcionamento da JEFAI.",
     },
     {
-      title: "Dinâmica de Grupo",
+      title: "Dinâmica de grupo",
       description:
-        "Fase prática colaborativa para avaliar trabalho em equipa, comunicação, resolução de problemas e espírito de iniciativa.",
+        "Participa numa atividade colaborativa que permite avaliar a tua capacidade de trabalhar em equipa, comunicar, resolver problemas e demonstrar espírito de iniciativa.",
     },
   ] satisfies RecruitmentStep[],
 };
@@ -229,15 +231,15 @@ export const recruitment = {
 // ─── Contacto ────────────────────────────────────────────────────────────────
 export const contact = {
   id: "contacto",
-  eyebrow: "Contacto Direto",
+  eyebrow: "Contacto direto",
   title: "Vamos conversar sobre o seu próximo projeto?",
   description:
-    "Quer procure implementar Inteligência Artificial na sua empresa, estabelecer uma parceria institucional ou juntar-se à equipa, estamos disponíveis.",
+    "Se pretende explorar soluções de inteligência artificial para a sua empresa, estabelecer uma parceria institucional ou saber mais sobre a JEFAI, entre em contacto connosco.",
   subjects: [
-    "Pedido de Proposta — Soluções de IA / Machine Learning",
-    "Pedido de Proposta — Análise de Dados & Automação",
-    "Consultoria em IA, Workshops ou Gestão de Redes Sociais",
-    "Parceria Institucional / Evento Universitário",
-    "Recrutamento de Estudantes UC",
+    "Pedido de proposta — Soluções de IA e aprendizagem automática",
+    "Pedido de proposta — Análise de dados e automação",
+    "Consultoria em IA, workshops ou gestão de redes sociais",
+    "Parceria institucional ou evento universitário",
+    "Recrutamento de estudantes da UC",
   ],
 };

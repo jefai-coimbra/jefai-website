@@ -7,7 +7,7 @@ export const site = {
   name: "JEFAI",
   fullName: "Junior Enterprise for Artificial Intelligence",
   description:
-    "Júnior Iniciativa da Universidade de Coimbra dedicada a soluções de Inteligência Artificial, Machine Learning, análise de dados e automação.",
+    "Júnior Iniciativa da Universidade de Coimbra dedicada ao desenvolvimento de soluções de inteligência artificial, aprendizagem automática, análise de dados e automação de processos.",
   // TODO(conteúdo): substituir pelo domínio final quando o DNS estiver configurado (issue WEB-17)
   url: "https://jefai.pt",
   locale: "pt_PT",
@@ -18,12 +18,12 @@ export type NavLink = { label: string; href: `#${string}` };
 /** Cada href tem de corresponder ao `id` de uma secção em src/app/page.tsx. */
 export const navLinks: NavLink[] = [
   { label: "Serviços", href: "#servicos" },
-  { label: "Como Trabalhamos", href: "#como-trabalhamos" },
+  { label: "Como trabalhamos", href: "#como-trabalhamos" },
   { label: "Departamentos", href: "#departamentos" },
   { label: "Recrutamento", href: "#recrutamento" },
 ];
 
-export const primaryCta = { label: "Fale Connosco", href: "#contacto" } as const;
+export const primaryCta = { label: "Fale connosco", href: "#contacto" } as const;
 
 export const contactInfo = {
   address: ["Rua Larga, Departamento de Física da FCTUC", "3004-516 Coimbra, Portugal"],
